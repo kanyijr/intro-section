@@ -1,0 +1,266 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Epilogue", sans-serif;
+  color: hsl(0, 0%, 41%);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container, .navbar {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.hidden {
+  display: none;
+}
+
+.flex-col, .hero__left, .h-flex, .navbar__mobile-btns, .flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex {
+  flex-direction: row;
+}
+
+.btn {
+  border: 1px solid hsl(0, 0%, 41%);
+  padding: 0.5em;
+  border-radius: 0.8rem;
+}
+
+/*==========================
+   Section-specific styling
+ ===========================*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin-top: 1em;
+}
+
+.navbar__list, .navbar__right {
+  display: none;
+}
+
+.navbar__mobile {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  min-width: 60vw;
+  outline: 1000px solid rgba(0, 0, 0, 0.5);
+  background-color: hsl(0, 0%, 98%);
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.navbar__list-mobile-item {
+  margin-bottom: 2em;
+}
+
+.navbar__list-mobile-item:hover {
+  cursor: pointer;
+}
+
+.close {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 1em;
+}
+
+.close img {
+  margin-left: auto;
+}
+
+.item-dropdown {
+  margin-bottom: 1em;
+}
+
+.item-dropdown::after {
+  content: url("images/icon-arrow-down.svg");
+  margin-left: 0.5em;
+}
+
+.dropdown {
+  transition: all 0.5s ease-in-out;
+  display: none;
+}
+
+.navbar__list-mobile-item:hover > .dropdown, .navbar__list-mobile-item:focus > .dropdown {
+  display: block;
+  cursor: pointer;
+}
+
+.dropdown li {
+  display: flex;
+  gap: 0.3em;
+  margin-bottom: 1em;
+  padding-left: 1em;
+}
+
+.navbar__mobile-btns {
+  align-items: center;
+  gap: 0.5em;
+}
+
+.register {
+  color: hsl(0, 0%, 41%);
+  text-align: center;
+  width: 100%;
+}
+
+.login {
+  color: hsl(0, 0%, 41%);
+}
+
+.hero {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.h-flex {
+  flex-direction: column-reverse;
+  gap: 2em;
+}
+
+.hero__img-desktop {
+  display: none;
+}
+
+.hero__left {
+  text-align: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.hero__title {
+  font-weight: 700;
+  color: hsl(0, 0%, 8%);
+  margin-bottom: 0.1em;
+}
+
+.hero__left p {
+  font-weight: 700;
+}
+
+.learn {
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 98%);
+  padding: 0.8em 1em;
+  font-weight: 700;
+}
+
+.hero__logos {
+  gap: 2.3em;
+}
+
+@media (min-width: 770px) {
+  .navbar {
+    position: relative;
+  }
+  .navbar__list, .navbar__right {
+    display: block;
+  }
+  .navbar__right-mobile {
+    display: none;
+  }
+  .navbar__left {
+    display: flex;
+    gap: 4em;
+  }
+  .navbar__left-logo:hover {
+    cursor: pointer;
+  }
+  .navbar__list {
+    display: flex;
+  }
+  .navbar__list-item:hover {
+    cursor: pointer;
+    font-weight: 700;
+    color: hsl(0, 0%, 8%);
+  }
+  .navbar__list-item:hover > .desktop-dropdown {
+    display: block;
+    color: hsl(0, 0%, 41%);
+    font-weight: 500;
+  }
+  .navbar__list-item + .navbar__list-item {
+    margin-left: 2em;
+  }
+  .login {
+    margin-right: 0.5em;
+    color: hsl(0, 0%, 41%);
+  }
+  .login:hover, .register:hover {
+    color: hsl(0, 0%, 8%);
+  }
+  .desktop-dropdown {
+    display: none;
+    position: absolute;
+    z-index: 9999;
+    background-color: white;
+    box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0.6rem;
+    padding: 1em;
+  }
+  .desktop-dropdown li {
+    display: flex;
+    gap: 0.5em;
+    margin-bottom: 1em;
+  }
+  .hero__img-desktop {
+    display: block;
+  }
+  .hero__img-mobile {
+    display: none;
+  }
+  .h-flex {
+    display: flex;
+    flex-direction: row;
+  }
+  .hero__left {
+    display: block;
+    text-align: start;
+    min-height: 100%;
+    padding-top: 6em;
+  }
+  .hero__title {
+    font-size: 4rem;
+    margin-bottom: 1em;
+  }
+  .hero__left p {
+    font-size: 1.2rem;
+    margin-bottom: 2em;
+  }
+  .learn {
+    margin-bottom: 2em;
+  }
+  .hero__logos {
+    margin-top: 10em;
+  }
+  .hero__right img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}/*# sourceMappingURL=style.css.map */

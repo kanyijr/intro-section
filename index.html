@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">  
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Mwenda Kanyi | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  
+    <!-- header section -->
+    <header class="header">
+          <nav class="navbar">
+            <div class="navbar__left">
+              <div class="navbar__left-logo">
+                <img src="images/logo.svg" alt="snap-logo">
+              </div>
+              <ul class="navbar__list">
+                <li class="navbar__list-item ">
+                  <div class="item-dropdown">
+                    Features
+                  </div>
+                  <ul class="desktop-dropdown">
+                    <li>
+                      <img src="images/icon-todo.svg" alt="Todo-list-icon">
+                      <p>Todo List</p>
+                    </li>
+
+                    <li>
+                      <img src="images/icon-calendar.svg" alt="calendar-icon">
+                      <p>Calendar</p>
+                    </li>
+
+                    <li>
+                      <img src="images/icon-reminders.svg" alt="reminders-icon">
+                      <p>Reminders</p>
+                    </li>
+
+                    <li>
+                      <img src="images/icon-planning.svg" alt="planning-icon">
+                      <p>Planning</p>
+                    </li>
+                  </ul>
+                 
+                </li>
+
+
+                <li class="navbar__list-item ">
+                  <div class="item-dropdown">
+                    Company
+                  </div>
+                  <ul class="desktop-dropdown">
+                    <li>History</li>
+                    <li>Our Team</li>
+                    <li>Blog</li>
+                  </ul>
+                  
+                </li>
+                <li class="navbar__list-item">Careers</li>
+                <li class="navbar__list-item">About</li>
+              </ul>
+            </div>
+
+            <div class="navbar__right">
+              <a href="#" class="login">login</a>
+              <a href="#" class="btn register">Register</a>
+            </div>
+
+            <!-- mobile section -->
+            <div class="navbar__right-mobile">
+              <div class="hamburger">
+                <img src="images/icon-menu.svg" alt="hamburger-menu-icon">
+              </div>
+              <div class="navbar__mobile hidden">
+                <div class="flex-col">
+                  <div class="close">
+                    <img src="images/icon-close-menu.svg" alt="icon-close-menu">
+                  </div>
+                  <ul class="navbar__list-mobile">
+                    <li class="navbar__list-mobile-item ">
+                      <div class="item-dropdown">
+                        Features
+                      </div>    
+                      <ul class="dropdown">
+                          <li>
+                            <img src="images/icon-todo.svg" alt="Todo-list-icon">
+                            <p>Todo List</p>
+                          </li>
+
+                          <li>
+                            <img src="images/icon-calendar.svg" alt="calendar-icon">
+                            <p>Calendar</p>
+                          </li>
+
+                          <li>
+                            <img src="images/icon-reminders.svg" alt="reminders-icon">
+                            <p>Reminders</p>
+                          </li>
+
+                          <li>
+                            <img src="images/icon-planning.svg" alt="planning-icon">
+                            <p>Planning</p>
+                          </li>
+                      </ul>
+                    </li>
+
+                    <li class="navbar__list-mobile-item ">
+                      <div class="item-dropdown">
+                        Company
+                      </div>
+                      <ul class="dropdown">
+                        <li>History</li>
+                        <li>Our Team</li>
+                        <li>Blog</li>
+                      </ul>
+                     
+                    </li>
+
+                    <li class="navbar__list-mobile-item">Careers</li>
+                    
+                    <li class="navbar__list-mobile-item">About</li>
+                  </ul>
+  
+                  <div class="navbar__mobile-btns flex-col">
+                    <a href="#" class="login">login</a>
+                    <a href="#" class="btn register">Register</a>
+                  </div>
+                </div>
+                
+              </div>
+              
+
+            </div>
+          </nav>
+
+    </header>
+
+    <!-- main section -->
+    <main>
+
+      <!-- hero section -->
+      <section class="hero">
+        <div class="container h-flex">
+
+          <div class="hero__left">
+            <h1 class="hero__title">Make remote work</h1>
+            <p>  Get your team in sync, no matter your location. Streamline processes, 
+              create team rituals, and watch productivity soar.
+            </p>
+            <a href="#" class="btn learn">Learn more</a>
+            <div class="hero__logos flex">
+              <div class="hero__logos-logo">
+                <img src="images/client-databiz.svg" alt="databiz-logo for hero section">
+              </div>
+
+              <div class="hero__logos-logo">
+                <img src="images/client-audiophile.svg" alt="audiophile-logo">
+              </div>
+
+              <div class="hero__logos-logo">
+                <img src="images/client-meet.svg" alt="meet-logo">
+              </div>
+
+              <div class="hero__logos-logo">
+                <img src="images/client-maker.svg" alt="maker-logo">
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__right">
+            <img src="images/image-hero-mobile.png" alt="hero-image" class="hero__img-mobile">
+            <img src="images/image-hero-desktop.png" alt="hero-image" class="hero__img-desktop">
+          </div>
+        </div>
+      </section>
+
+
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/kanyijr">Mwenda Kanyi</a>.
+  </div>
+<script src="index.js"></script>  
+</body>
+</html>
